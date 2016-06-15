@@ -15,7 +15,7 @@
   <%= image_tag @image.file(:medium) %>
 </p>
 
-<p><%= link_to 'Download', download_image_path(@image) %></p>
+<p><%= link_to 'Download', download_image_path(@image), data: { 'no-turbolink' => 'true' } %></p>
 
 <%= link_to 'Edit', edit_image_path(@image) %> |
 <%= link_to 'Back', images_path %>

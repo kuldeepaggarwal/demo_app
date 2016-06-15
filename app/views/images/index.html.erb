@@ -17,7 +17,7 @@
       <tr>
         <td><%= image.title %></td>
         <td><%= image.description %></td>
-        <td><%= link_to image.file, download_image_path(image) %></td>
+        <td><%= link_to image.file, download_image_path(image), data: { 'no-turbolink' => 'true' } %></td>
         <td><%= link_to 'Show', image %></td>
         <td><%= link_to 'Edit', edit_image_path(image) %></td>
         <td><%= link_to 'Destroy', image, method: :delete, data: { confirm: 'Are you sure?' } %></td>
